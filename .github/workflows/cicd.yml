@@ -8,10 +8,7 @@ jobs:
   unittest:
     runs-on: ubuntu-latest # choose the OS for running the action
     
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-    # define the individual sequential steps to be run
+  # define the individual sequential steps to be run
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
